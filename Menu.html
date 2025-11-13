@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style type="text/css" id="operaUserStyle"></style><style type="text/css"></style></head>
+    <link rel="stylesheet" href="Menu.css">
+    <title> Menu de Cafeteria </title>
+
+</head>
+<body>
+    
+
+    <div class="contenedor">
+    <div class="encabezado">
+
+        <h1 class="animate__animated animate__fadeInDown animate__infinite"> Cafeteria Hometown </h1>
+        <h1 class="animate__animated animate__pulse animate__infinite"> 🍶 Menu digital </h1>
+        <p> Formulario de pedido </p>
+
+    </div>
+
+
+    <form class="contenido-formulario">
+    <div class="seccion">
+
+        <h2 class="titulo-seccion">
+        <span class="icono-seccion"> 👥 </span>
+        Datos Personales </h2>
+
+
+
+        <div class="campo-formulario">
+
+        <label for="nombrecliente"> Nombre del Cliente 
+        <span class="requerido"> * </span></label>
+        <input type="text" required="" placeholder="Nombre y apellido">
+
+        </div>
+
+
+
+        <div class="campo-formulario">
+
+        <label for="email"> Correo Electronico 
+        <span class="requerido"> * </span></label>
+        <input type="email" required="" placeholder="ejemplo@ejemplo.com">
+
+        </div>
+
+
+
+        <div class="campo-formulario">
+
+        <label for="numerotelefo"> Numero de Telefono
+        <span class="requerido"> * </span></label>
+        <input type="tel" required="" placeholder="+52 55 0000 0000">
+
+        </div>
+
+
+
+        <div class="campo-formulario">
+
+        <label for="direccionentrega"> Direccion de Entrega
+        <span class="requerido"> * </span></label>
+        <input type="text" required="" placeholder="Direccion de la calle"> <br><br>
+        <input type="text" required="" placeholder="Ciudad"> <br><br>
+        <input type="text" required="" placeholder="Codigo Postal">
+
+        </div>
+
+
+
+        <div class="campo-formulario">
+
+        <label for="metodopago"> Metodo de Pago
+        <span class="requerido"> * </span></label>
+        <select id="metodopago" name="metodopago" required="">
+
+            <option value=""> Selecciona tu metodo de pago </option>
+            <option value=""> Mastercard </option>
+            <option value=""> American Express </option>
+            <option value=""> Mercado Pago </option>
+            <option value=""> PayPal </option>
+            <option value=""> VISA </option>
+            <option value=""> OXXO </option>
+
+        </select>
+
+        </div>
+
+
+    </div>
+
+
+    
+    <div class="seccion">
+
+        <h2 class="titulo-seccion">
+        <span class="icono-seccion"> 🍽️ </span>
+        Menu de Cafeteria </h2>
+
+
+
+        <p style="margin-bottom: 20px; color: #666;">
+        Selecciona tu orden:
+        </p>
+
+
+
+        <div class="contenedor-orden">
+
+
+        
+        <div class="orden-opcion cafe">
+
+        <input type="checkbox">
+        <label for="orden1" class="orden-tarjeta">
+        <span class="orden-icono"> ☕ </span>
+        <span class="orden-nombre"> Cafes Caliente/Frio <br> (Expresso, Leche y crema)</span></label>
+
+        </div>
+
+
+
+        <div class="orden-opcion matcha">
+
+        <input type="checkbox">
+        <label for="orden2" class="orden-tarjeta">
+        <span class="orden-icono"> 🍵 </span>
+        <span class="orden-nombre"> Matcha </span></label>
+
+        </div>
+
+
+
+        <div class="orden-opcion malteada">
+
+        <input type="checkbox">
+        <label for="orden3" class="orden-tarjeta">
+        <span class="orden-icono"> 🧋 </span>
+        <span class="orden-nombre"> Malteada </span></label>
+
+        </div>
+
+
+
+        <div class="orden-opcion pastel">
+
+        <input type="checkbox">
+        <label for="orden4" class="orden-tarjeta">
+        <span class="orden-icono"> 🍰 </span>
+        <span class="orden-nombre"> Pasteles </span></label>
+
+        </div>
+
+
+
+        <div class="orden-opcion galletas">
+
+        <input type="checkbox">
+        <label for="orden5" class="orden-tarjeta">
+        <span class="orden-icono"> 🍪 </span>
+        <span class="orden-nombre"> Galletas </span></label>
+
+        </div>
+
+
+
+        <div class="orden-opcion waffles">
+
+        <input type="checkbox">
+        <label for="orden6" class="orden-tarjeta">
+        <span class="orden-icono"> 🧇 </span>
+        <span class="orden-nombre"> Waffles </span></label>
+
+        </div>
+
+
+
+        <div class="orden-opcion pays">
+
+        <input type="checkbox">
+        <label for="orden7" class="orden-tarjeta">
+        <span class="orden-icono"> 🥧 </span>
+        <span class="orden-nombre"> Pays </span></label>
+
+        </div>
+
+
+
+        <div class="orden-opcion pandulce">
+
+        <input type="checkbox">
+        <label for="orden8" class="orden-tarjeta">
+        <span class="orden-icono"> 🥐 </span>
+        <span class="orden-nombre"> Pan Dulce </span></label>
+
+        </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="seccion">
+
+        <h2 class="titulo-seccion">
+        <span class="icono-seccion"> 💬 </span>
+        Informacion Adicional </h2>
+
+
+
+        <div class="campo-formulario">
+
+        <label for="comentarios"> Reseñas y comentarios (Opcional) </label>
+        <textarea id="comentarios" placeholder="Cuentanos como fue tu experiencia al ordenar en Cafeteria Hometown ..."></textarea>
+
+        </div>
+
+    
+    </div>
+
+
+    <button type="submit" class="boton-enviar"> ✓ Enviar Registro </button>
+
+
+    </form>
+
+    </div>
+
+
+</body>
+</html>
